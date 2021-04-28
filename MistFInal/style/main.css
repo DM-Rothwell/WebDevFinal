@@ -1,0 +1,336 @@
+/*Used to create the background picture and nav bar*/
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
+
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Dosis', sans-serif;
+}
+
+
+/*Navbar styling*/
+.navbar {
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+	color: white;
+	margin-bottom: 0rem;
+}
+
+.logo {
+	position: relative;
+	height: 70px;
+	background-color: black;
+	float: left;
+	font-size: 1.5rem;
+}
+
+.logo img {
+	position: inherit;
+	float: left;
+
+}
+
+.navbar-links {
+	height: 100%;
+	padding-left: 4rem;
+}
+
+.navbar-links ul {
+	display: flex;
+	margin: 0;
+	padding: 0;
+
+}
+
+.navbar-links li {
+	list-style: none;
+}
+
+.navbar-links li a {
+	display: block;
+	text-decoration: none;
+	color: white;
+	padding: 1rem;
+	padding-left: 2rem;
+	font-size: 26px;
+	font-weight: 500;
+}
+
+.navbar-links li a:hover {
+	color: #d6a85f;
+	transition: 0.6s ease;
+}
+
+.toggle-button {
+	position: absolute;
+	top: 1.3rem;
+	right: 2rem;
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 30px;
+	height: 21px;
+}
+
+.toggle-button .bar {
+	height: 3px;
+	width: 100%;
+	background-color: white;
+	border-radius: 10px;
+}
+
+
+.interactionsContainer {
+	display: flex;
+	right: 0;
+	padding-left: 4rem;
+}
+
+.interactions a {
+	color: grey;
+	font-size: 18px;
+	margin-top: .4rem;
+	margin-right: 1rem;
+}
+
+.interactions button {
+	background-color: #d6a85f;
+	height: 35px;
+	border-radius: 25px;
+	font-weight: 600;
+}
+
+
+.smallInteractions {
+	display: none;
+}
+
+/*Media Query for the navbar*/
+@media (max-width: 800px) {
+	.navbar {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.toggle-button {
+		display: flex;
+	}
+
+	.navbar-links {
+		display: none;
+		width: 100%;
+	}
+
+	.navbar-links ul {
+		width: 100%;
+		flex-direction: column;
+		margin-right: 7.5rem;
+	}
+
+	.navbar-links ul li {
+		text-align: center;
+	}
+
+	.navbar-links ul li a {
+		padding: 2rem 0rem;
+	}
+
+	.navbar-links.active {
+		display: flex;
+	}
+
+	.interactionsContainer {
+		display: none;
+	}
+
+	.smallInteractions {
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+.titlePage {
+	font-size: 45px;
+	margin: 0;
+	text-align: center;
+	font-weight: bold;
+	margin-left: 10rem;
+	margin-right: 10rem;
+	margin-top: 5rem;
+}
+
+.titlePage hr {
+	align-items: center;
+	width: 800px;
+	margin-top: -4rem;
+	border: none;
+	height: 4px;
+	color: black;
+	background-color: black;
+}
+
+.titlePage h1{
+	margin-top: 0;
+}
+
+.titlePage h5 {
+	color: grey;
+	letter-spacing: 2px;
+	margin: 0;
+	margin-top: -1rem;
+	font-size: 30px;
+	margin-left: 8rem;
+	margin-right: 8rem;
+}
+
+.backgroundPic {
+	margin-top: -3.8rem;
+	background-image: url(../Images/ryoji-hayasaka-3VIQ1CDsrSk-unsplash.jpg);
+	background-color: #cccccc;
+	height: 903px;
+	background-position: center -70px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+
+}
+
+
+.portfolioContainer{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 1rem;
+	margin-left: 5rem;
+	margin-right: 5rem;
+}
+
+.portfolioContainer img{
+	height: 250px;
+	padding: 1rem;
+}
+
+
+.titlePageServices {
+	font-size: 45px;
+	margin: 0;
+	font-weight: bold;
+	margin-top: 5rem;
+}
+
+.titlePageServices hr {
+	float: left;
+	width: 800px;
+	margin-top: -4rem;
+	margin-bottom: 0rem;
+	height: 4px;
+	color: black;
+	background-color: black;
+}
+
+.titlePageServices h1{
+	margin-top: 0;
+}
+
+.titlePageServices h5 {
+	color: grey;
+	letter-spacing: 2px;
+	margin: 0;
+	font-size: 30px;
+	margin-top: -3rem;
+}
+
+
+
+.indexFlex{
+	display: flex;
+	flex-direction: column;
+
+}
+
+.welcometoM {
+	text-align: center;
+	padding-left: 3rem;
+	text-shadow: 0px 0px rgba(100,100,100,0.5);
+	font-size: 70px;
+	font-weight: 700;
+	line-height: 142px;
+}
+
+.lorumIpsumIndex {
+	text-align: center;
+	font-size: 25px;
+	font-weight: 400;
+	line-height: 36px;
+	margin-top: -4rem;
+	margin-left: 3rem;
+	margin-right: 3rem;
+}
+
+.buttonsTag button{
+	width: 8rem;
+	height: 3rem;
+	font-size: 20px;
+}
+.loginB{
+	border-color: #d6a85f;
+	background-color: #d6a85f;
+	color: white;
+	border-radius: 5px;
+}
+
+.signUpB{
+	border-color: #d6a85f;
+	background-color: white;
+	color: black;
+	border-radius: 5px;
+}
+
+.hotDeals{
+	width: 100%;
+}
+
+.hotDeals h2{
+	color: #d6a85f;
+	text-align: center;
+	left: 50%;
+	font-size: 40px;
+}
+
+.hotDeals h3{
+	text-align: center;
+	font-size: 25px;
+}
+
+.hotDealsPic{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.hotDealsPic img{
+	width: 350px;
+	height: 500px;
+}
+.subHeading h3{
+	text-align: center;
+	font-size: 25px;
+}
+
+.mapStyle iframe{
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.shopHeader h2{
+	text-align: center;
+}
+
+
+
+

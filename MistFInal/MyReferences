@@ -1,0 +1,23 @@
+Navbar
+- "Templates/Header.php"
+    For my navbar i used "7. Transparent Sticky Navbar" as a template and made changes until I was happy with it.
+    https://www.mockplus.com/blog/post/bootstrap-navbar-template and used
+
+Footer
+- "Templates/Footer.php"
+    I use this website as a reference to base my footer on.
+    https://mdbootstrap.com/docs/b4/jquery/navigation/footer/
+
+Writing to Database
+- "contact.php" + "createAcc.php"
+    I used the following youtube video to help me make with the php code to get my contact and create account form
+    to write to the database.
+    https://www.youtube.com/watch?v=aaeDe8l1eFY&t=168s
+
+Cart Functionality
+- "data/products.php" + "product.css" + "cart.php"
+    Code taken from the example given to us on moodle from Matt Smiiths PHP Book
+
+Link to Github
+	Heres my link to github for my Version Control and Testing
+	https://github.com/DM-Rothwell

@@ -1,0 +1,17 @@
+.fa-star{
+    color: #d6a85f;
+}
+
+.fa-star.disable{
+    color: lightgray;
+}
+
+.product img{
+    width: 150px;
+    height: 150px;
+}
+
+.price{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
